@@ -1,0 +1,110 @@
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 70px;
+}
+.cart-summary, .delivery-form {
+    width: 48%;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.delivery-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+.payButton{
+    display: flex;
+    margin-top: 20px;
+}
+.pay-button {
+    background-color:  rgb(236, 173, 14);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pay-button:hover {
+    background-color:  rgb(236, 173, 14);
+}
+.receipt {
+    width: 300px;
+    padding: 20px;
+    margin: auto;
+    background: white;
+    border: 2px dashed black;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.receiptHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    color: green;
+}
+.receipt h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+.receipt .total{
+    padding-top: 10px;
+}
+.receipt .total span{
+    font-size: 16px;
+    font-weight: 800;
+}
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    font-size: 14px;
+}
+.total-amount {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.receiptCart{
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: rgb(128, 177, 128);
+    color: white;
+    margin-top: 10px;
+    gap: 10px;
+    cursor: pointer;
+}
+.receipt .date{
+    padding-top: 30px;
+    color: #666;
+}
+.receiptBuyerDetails{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.checkoutWrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+@media (max-width:768px) {
+    .cart-summary{
+        width: 100%;
+    }
+    .delivery-form{
+        width: 100%;
+    }
+}

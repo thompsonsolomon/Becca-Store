@@ -1,0 +1,118 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-family: sans-serif;
+}
+ul,li{
+  list-style: none;
+  color: inherit;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+img{
+  width: 100%;
+}
+svg{
+  width: 15px;
+}
+
+
+.errorPagebtn{
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color:  rgb(236, 173, 14);
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
+
+.productDetails{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+}
+.ProductDetailsWrapper{
+  display: grid;
+  gap: 2rem;
+  width: 90%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.back{
+  width: 90%;
+}
+.ProductDetailsWrapper img{
+  width: 100%;
+  height: 24rem;
+    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.ProductDetailsWrapper button{
+  outline: none;
+  border: none;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color:  rgb(236, 173, 14);
+  margin-top: 30px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media (max-width:768px) {
+  .ProductDetailsWrapper{
+    grid-template-columns: 1fr;
+  }    
+}
+input{
+  outline: none;
+}
+
+
+/* Works for Chrome, Edge, and Safari */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  /* Transitions the background color over 5000s */
+  transition: background-color 5000s;
+  /* Changes text color to black */
+  -webkit-text-fill-color: black !important;
+  /* Adds a 1px black border and removes the outline */
+  outline: none;
+}
+
+/* Works for Firefox */
+input:-moz-autofill {
+  /* Changes text color to black */
+  -moz-text-fill-color: black !important;
+  /* Adds a 1px black border and removes the outline */
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
