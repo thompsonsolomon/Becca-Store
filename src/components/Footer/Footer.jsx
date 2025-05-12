@@ -5,9 +5,10 @@ import { CompanyName } from "../../../Data";
 const Foot = () => {
   return (
     <footer className="bg-white-900 text-black py-10">
-      <div className=" mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className=" mx-auto px-6 md:px-10 grid grid-cols-1 fgrid-cols-3  gap-8">
         {/* Logo and About Section */}
         <div>
+        <h2 className=" hed text-lg font-semibold text-black mb-4">About {CompanyName}</h2>
           <p className="text-sm text-black">
             Your one-stop solution for the highest quality products, carefully sourced and delivered with precision. We ensure that nature’s best reaches your doorstep, offering not just products, but a commitment to excellence and customer satisfaction every step of the way.
           </p>
@@ -16,7 +17,7 @@ const Foot = () => {
 
         {/* Contact Information */}
         <div>
-          <h2 className="text-lg font-semibold text-black mb-4">Contact Us</h2>
+          <h2 className="hed text-lg font-semibold text-black mb-4">Contact Us</h2>
           <ul className="space-y-2 text-sm">
             <li>📞 <b>Phone</b>: <a href="tel:+08076452210"> (+234)8076452210</a></li>
             <li><svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 text-red-500 inline-block mr-1" viewBox="0 0 24 24" fill="currentColor">
@@ -29,7 +30,7 @@ const Foot = () => {
 
         {/* Social Media Links */}
         <div>
-          <h2 className="text-lg font-semibold text-black mb-4">Follow Us</h2>
+          <h2 className=" hed text-lg font-semibold text-black mb-4">Follow Us</h2>
           <div className="flex space-x-4">
             <a
               href="https://www.facebook.com/klassie.angela"
